@@ -11,12 +11,12 @@ import java.util.ResourceBundle;
 
 public class View {
 
-    private static String INPUT_STRING_DATA = "input.string.data";
-    private static String FIRST_NAME = "input.first.name.data";
-    private static String LAST_NAME = "input.last.name.data";
-    private static String WRONG_INPUT_DATA = "input.wrong.data";
-    private static String LOGIN_DATA = "input.login.data";
-    private static String NOTE_CREATED = "note.created.data";
+    public static String INPUT_STRING_DATA = "input.string.data";
+    public static String FIRST_NAME = "input.first.name.data";
+    public static String LAST_NAME = "input.last.name.data";
+    public static String WRONG_INPUT_DATA = "input.wrong.data";
+    public static String LOGIN_DATA = "input.login.data";
+    public static String NOTE_CREATED = "note.created.data";
 
     private static String MESSAGES_BUNDLE_NAME = "messages";
     public static final ResourceBundle bundle =

@@ -30,7 +30,7 @@ public class Controller {
         String regex = (String.valueOf(View.bundle.getLocale()).equals("ua"))
                 ? Regex.REGEX_NAME_UKR : Regex.REGEX_NAME_LAT;
 
-        StringBuffer firstName = checkInput(View.FIRST_NAME, regex);
+        StringBuffer firstName = checkInput(view.FIRST_NAME, regex);
         StringBuffer lastName = checkInput(View.LAST_NAME, regex);
         StringBuffer login;
         do{
