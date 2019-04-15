@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 /**
  * This class is for console output.
  *
- * @author Oleksandra Dulich
+ * @author dulichka
  */
 
 public class View {

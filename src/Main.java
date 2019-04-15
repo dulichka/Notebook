@@ -4,7 +4,7 @@ import view.View;
 
 /** This the launching class.
  *
- * @author Oleksandra Dulich
+ * @author dulichka
  */
 
 public class Main {

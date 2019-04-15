@@ -3,7 +3,7 @@ package model;
 /**
  * This class is used for data used in the Controller.
  *
- * @author Oleksandra Dulich
+ * @author dulichka
  */
 
 public class Notebook {

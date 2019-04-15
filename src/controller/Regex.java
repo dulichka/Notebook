@@ -1,5 +1,11 @@
 package controller;
 
+/**
+ * This interface is a regex container.
+ *
+ * @author dulichka
+ */
+
 public interface Regex {
 
     String REGEX_NAME_UKR = "[[А-ЯҐЄІЇ]&&[^ЁЫЭЪ]][[а-яґєії\\']&&[^ёыэъ]]{1,20}[[а-яґєії]&&[^ёыэъ]]";

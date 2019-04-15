@@ -12,7 +12,7 @@ import java.util.Scanner;
  * @see Notebook
  * @see View
  *
- * @author Oleksandra Dulich *
+ * @author dulichka
  */
 
 public class Controller {
@@ -32,11 +32,17 @@ public class Controller {
 
         StringBuffer firstName = checkInput(view.FIRST_NAME, regex);
         StringBuffer lastName = checkInput(View.LAST_NAME, regex);
-        StringBuffer login;
-        do{
-            login = checkInput(View.LOGIN_DATA, Regex.REGEX_LOGIN);
-            System.out.println("AAAAAAaaaa");
-        } while (NotebookDB.Notes.checkLogin(login));
+        StringBuffer login = null;
+        boolean validLogin = false;
+        while (!validLogin){
+            try{
+                login = checkInput(View.LOGIN_DATA, Regex.REGEX_LOGIN);
+                validLogin = NotebookDB.Notes.checkLogin(login);
+            } catch (LoginException le){
+                System.err.println(le.getMessage());
+
+            }
+        }
 
         notebook.setFirstName(firstName);
         notebook.setLastName(lastName);
